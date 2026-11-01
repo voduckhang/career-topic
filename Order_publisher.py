@@ -11,6 +11,10 @@ Thực hành xử lý lỗi / retry / DMQ:
     python Order_publisher.py --scenario missing-field         # thiếu trường bắt buộc -> DMQ ngay
     python Order_publisher.py --scenario unknown-event         # sự kiện chưa hỗ trợ -> DMQ ngay
 
+Thực hành fan-out (cần chạy cả order_processor.py và notification_service.py):
+    python Order_publisher.py --count 4                        # CẢ HAI service đều nhận đủ 4 đơn
+    python Order_publisher.py --scenario notify-down --count 1 # chỉ notification lỗi -> chỉ notifications-dmq tăng
+
 Thực hành TTL (TẮT worker trước, gửi, chờ quá TTL, rồi xem orders-dmq):
     python Order_publisher.py --count 2 --ttl 5000
 
@@ -36,7 +40,8 @@ from common import build_service
 
 PRODUCTS = [("Áo thun", 150_000), ("Giày thể thao", 850_000), ("Balo", 400_000), ("Tai nghe", 1_200_000)]
 
-SCENARIOS = ["normal", "transient", "flaky", "permanent", "bad-json", "missing-field", "unknown-event"]
+SCENARIOS = ["normal", "transient", "flaky", "permanent", "bad-json", "missing-field",
+             "unknown-event", "notify-down"]
 
 
 class ReceiptListener(MessagePublishReceiptListener):
@@ -72,6 +77,9 @@ def build_event(scenario: str) -> tuple[str, str, str]:
         payload = json.dumps(order, ensure_ascii=False)
     elif scenario in ("transient", "flaky", "permanent"):
         order["_simulate"] = scenario  # order_processor.simulate_failure() đọc trường này
+        payload = json.dumps(order, ensure_ascii=False)
+    elif scenario == "notify-down":
+        order["_simulate_notify"] = "transient"  # chỉ notification_service đọc trường này
         payload = json.dumps(order, ensure_ascii=False)
     elif scenario == "bad-json":
         payload = "{đây không phải JSON"

@@ -8,6 +8,7 @@ from solace.messaging.config.missing_resources_creation_configuration import (
     MissingResourcesCreationStrategy,
 )
 from solace.messaging.config.message_acknowledgement_configuration import Outcome
+from solace.messaging.errors.pubsubplus_client_error import PubSubPlusClientError
 
 from errors import PermanentError, TransientError
 
@@ -78,13 +79,21 @@ def run_consumer(queue_name: str, topics: list[str], handle, exclusive: bool = T
 
     receiver = (
         service.create_persistent_message_receiver_builder()
-        .with_missing_resources_creation_strategy(MissingResourcesCreationStrategy.CREATE_ON_START)
+        # Queue do setup_queues.py tạo và cấu hình (DMQ, max redelivery, TTL...), nên worker chỉ
+        # BIND vào queue có sẵn. Nếu để CREATE_ON_START, API sẽ cố tạo queue với thuộc tính mặc
+        # định của nó và báo ENDPOINT_PROPERTY_MISMATCH khi khác với queue đã tạo qua SEMP.
+        .with_missing_resources_creation_strategy(MissingResourcesCreationStrategy.DO_NOT_CREATE)
         .with_message_client_acknowledgement()
         # Bắt buộc khai báo trước thì mới được settle FAILED / REJECTED
         .with_required_message_outcome_support(Outcome.FAILED, Outcome.REJECTED)
         .build(queue)
     )
-    receiver.start()
+    try:
+        receiver.start()
+    except PubSubPlusClientError as e:
+        service.disconnect()
+        raise SystemExit(f"[LỖI] Không bind được queue '{queue_name}': {e}\n"
+                         f"      Đã chạy `python setup_queues.py` để tạo queue chưa?")
 
     for topic in topics:
         try:
