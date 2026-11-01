@@ -1,0 +1,19 @@
+# docker-compose.yml
+services:
+  solace:
+    image: solace/solace-pubsub-standard:latest
+    container_name: solace
+    shm_size: 1g
+    ulimits:
+      core: 1
+      nofile:
+        soft: 1048576
+        hard: 1048576
+    ports:
+      - "8080:8080"   # Broker Manager (web UI)
+      - "55555:55555" # SMF, cổng chính cho Messaging API
+      - "8008:8008"   # Web Messaging (JavaScript trên browser)
+      - "1883:1883"   # MQTT
+    environment:
+      - username_admin_globalaccesslevel=admin
+      - username_admin_password=admin
