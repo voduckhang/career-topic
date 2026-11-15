@@ -16,7 +16,7 @@ import db
 import order_processor as OP
 import Order_publisher as P
 from errors import PermanentError, TransientError
-from tests.conftest import ACCEPTED, FAILED, REJECTED, make_order
+from tests.conftest import ACCEPTED, FAILED, REJECTED, UTF8_ENV, make_order
 
 pytestmark = pytest.mark.db
 ROOT = Path(__file__).resolve().parent.parent
@@ -79,9 +79,10 @@ def test_eight_processes_same_event_applied_once(clean_db):
             "OP.time = types.SimpleNamespace(sleep=lambda s: None);"
             "OP.handle('shop/orders/created', sys.argv[1])")
     payload = make_order("MP1", qty=3)
-    env = {**os.environ, "DATABASE_URL": os.environ["DATABASE_URL"]}
+    env = {**os.environ, **UTF8_ENV}
     procs = [subprocess.Popen([sys.executable, "-c", code, payload], cwd=ROOT, env=env,
-                              stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True) for _ in range(8)]
+                              stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                              encoding="utf-8") for _ in range(8)]
     results = [p.communicate() for p in procs]
     assert all(p.returncode == 0 for p in procs), [r[1] for r in results]
     assert stock() == db.INITIAL_STOCK - 3

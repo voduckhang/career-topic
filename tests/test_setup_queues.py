@@ -9,6 +9,8 @@ from pathlib import Path
 
 import pytest
 
+from tests.conftest import UTF8_ENV
+
 ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -73,8 +75,9 @@ def semp():
 
 
 def run_setup(semp):
-    env = {**os.environ, "SOLACE_SEMP": semp.url}
-    return subprocess.run([sys.executable, "setup_queues.py"], cwd=ROOT, env=env, capture_output=True, text=True)
+    env = {**os.environ, **UTF8_ENV, "SOLACE_SEMP": semp.url}
+    return subprocess.run([sys.executable, "setup_queues.py"], cwd=ROOT, env=env,
+                          capture_output=True, text=True, encoding="utf-8")
 
 
 PAIRS = [("orders-queue", "orders-dmq"), ("notifications-queue", "notifications-dmq")]

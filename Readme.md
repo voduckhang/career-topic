@@ -22,6 +22,8 @@ Broker Manager: http://localhost:8080 (admin / admin) -> Queues để xem messag
 cd C:\Learning_Path\Solace_Demo
 .venv\Scripts\Activate.ps1
 
+## Start Worker
 python order_processor.py 
+
 python notification_service.py
 python order_publisher.py

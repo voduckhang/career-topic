@@ -16,6 +16,10 @@ from solace.messaging.config.message_acknowledgement_configuration import Outcom
 
 ACCEPTED, FAILED, REJECTED = Outcome.ACCEPTED, Outcome.FAILED, Outcome.REJECTED
 
+# Tiến trình con in tiếng Việt ra pipe: trên Windows stdout bị chuyển hướng dùng bảng mã hệ thống
+# (không phải UTF-8) nên sẽ lỗi UnicodeEncodeError. Mọi test chạy subprocess phải dùng env này.
+UTF8_ENV = {"PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
+
 
 class FakeMsg:
     """Message giả đủ dùng cho common.process_message."""

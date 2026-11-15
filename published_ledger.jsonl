@@ -1,0 +1,88 @@
+{"type": "sent", "order_id": "cb03897f", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736516.344}
+{"type": "sent", "order_id": "4fb9972a", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736516.545}
+{"type": "sent", "order_id": "4ad2c89d", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736516.747}
+{"type": "sent", "order_id": "9542607a", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736516.948}
+{"type": "sent", "order_id": "10afa0a6", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736517.153}
+{"type": "sent", "order_id": "dca10ac7", "event": "cancelled", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736517.355}
+{"type": "receipt", "order_id": "cb03897f", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736517.414}
+{"type": "receipt", "order_id": "4fb9972a", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736517.414}
+{"type": "receipt", "order_id": "4ad2c89d", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736517.415}
+{"type": "receipt", "order_id": "9542607a", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736517.415}
+{"type": "receipt", "order_id": "10afa0a6", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736517.415}
+{"type": "receipt", "order_id": "dca10ac7", "event": "cancelled", "attempt": 0, "ok": true, "error": null, "ts": 1794736517.416}
+{"type": "sent", "order_id": "40aa95a8", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736517.557}
+{"type": "sent", "order_id": "2df79fc5", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736517.759}
+{"type": "sent", "order_id": "6cd4f485", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736517.962}
+{"type": "sent", "order_id": "572345d4", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736518.164}
+{"type": "sent", "order_id": "5b2943ea", "event": "cancelled", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736518.366}
+{"type": "sent", "order_id": "2f2473cb", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736518.569}
+{"type": "receipt", "order_id": "40aa95a8", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736518.627}
+{"type": "receipt", "order_id": "2df79fc5", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736518.628}
+{"type": "receipt", "order_id": "6cd4f485", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736518.628}
+{"type": "receipt", "order_id": "572345d4", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736518.629}
+{"type": "receipt", "order_id": "5b2943ea", "event": "cancelled", "attempt": 0, "ok": true, "error": null, "ts": 1794736518.629}
+{"type": "receipt", "order_id": "2f2473cb", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736518.629}
+{"type": "sent", "order_id": "a3b97eea", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736664.631}
+{"type": "sent", "order_id": "c4ddedf0", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736664.832}
+{"type": "sent", "order_id": "9e44ae91", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736665.033}
+{"type": "sent", "order_id": "7a5f03a7", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736665.235}
+{"type": "sent", "order_id": "a49cfc13", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736665.436}
+{"type": "sent", "order_id": "317c4b22", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736665.637}
+{"type": "receipt", "order_id": "a3b97eea", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736665.7}
+{"type": "receipt", "order_id": "c4ddedf0", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736665.7}
+{"type": "receipt", "order_id": "9e44ae91", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736665.701}
+{"type": "receipt", "order_id": "7a5f03a7", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736665.701}
+{"type": "receipt", "order_id": "a49cfc13", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736665.702}
+{"type": "receipt", "order_id": "317c4b22", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736665.702}
+{"type": "sent", "order_id": "a1a8e26e", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736665.838}
+{"type": "sent", "order_id": "73d89f40", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736666.041}
+{"type": "sent", "order_id": "0e205458", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736666.242}
+{"type": "sent", "order_id": "1df6f6bb", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736666.444}
+{"type": "receipt", "order_id": "a1a8e26e", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736666.913}
+{"type": "receipt", "order_id": "73d89f40", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736666.916}
+{"type": "receipt", "order_id": "0e205458", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736666.917}
+{"type": "receipt", "order_id": "1df6f6bb", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736666.918}
+{"type": "sent", "order_id": "32ce7c8e", "event": "created", "attempt": 0, "scenario": "permanent", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736718.958}
+{"type": "sent", "order_id": "c553daa5", "event": "created", "attempt": 0, "scenario": "permanent", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736719.162}
+{"type": "receipt", "order_id": "32ce7c8e", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736720.028}
+{"type": "receipt", "order_id": "c553daa5", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736720.028}
+{"type": "sent", "order_id": "6a633bd5", "event": "created", "attempt": 0, "scenario": "permanent", "dmq_eligible": false, "ttl_ms": null, "ts": 1794736760.734}
+{"type": "sent", "order_id": "87cb8aef", "event": "created", "attempt": 0, "scenario": "permanent", "dmq_eligible": false, "ttl_ms": null, "ts": 1794736760.936}
+{"type": "receipt", "order_id": "6a633bd5", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736761.805}
+{"type": "receipt", "order_id": "87cb8aef", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736761.807}
+{"type": "sent", "order_id": "253a9eb6", "event": "created", "attempt": 0, "scenario": "duplicate", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736792.034}
+{"type": "sent", "order_id": "253a9eb6", "event": "created", "attempt": 1, "scenario": "duplicate", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736792.237}
+{"type": "sent", "order_id": "1f3e6277", "event": "created", "attempt": 0, "scenario": "duplicate", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736792.441}
+{"type": "sent", "order_id": "1f3e6277", "event": "created", "attempt": 1, "scenario": "duplicate", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736792.643}
+{"type": "sent", "order_id": "fb776981", "event": "created", "attempt": 0, "scenario": "duplicate", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736792.846}
+{"type": "sent", "order_id": "fb776981", "event": "created", "attempt": 1, "scenario": "duplicate", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736793.047}
+{"type": "receipt", "order_id": "253a9eb6", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736793.105}
+{"type": "receipt", "order_id": "253a9eb6", "event": "created", "attempt": 1, "ok": true, "error": null, "ts": 1794736793.106}
+{"type": "receipt", "order_id": "1f3e6277", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736793.106}
+{"type": "receipt", "order_id": "1f3e6277", "event": "created", "attempt": 1, "ok": true, "error": null, "ts": 1794736793.107}
+{"type": "receipt", "order_id": "fb776981", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736793.107}
+{"type": "receipt", "order_id": "fb776981", "event": "created", "attempt": 1, "ok": true, "error": null, "ts": 1794736793.108}
+{"type": "sent", "order_id": "96aea868", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736836.087}
+{"type": "sent", "order_id": "fed2f39c", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736836.289}
+{"type": "sent", "order_id": "682a23f6", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736836.491}
+{"type": "sent", "order_id": "eb2ac52e", "event": "cancelled", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736836.693}
+{"type": "sent", "order_id": "1b4c6bc5", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736836.895}
+{"type": "sent", "order_id": "f8f628c5", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736837.097}
+{"type": "receipt", "order_id": "96aea868", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736837.158}
+{"type": "receipt", "order_id": "fed2f39c", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736837.158}
+{"type": "receipt", "order_id": "682a23f6", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736837.159}
+{"type": "receipt", "order_id": "eb2ac52e", "event": "cancelled", "attempt": 0, "ok": true, "error": null, "ts": 1794736837.159}
+{"type": "receipt", "order_id": "1b4c6bc5", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736837.159}
+{"type": "receipt", "order_id": "f8f628c5", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736837.16}
+{"type": "sent", "order_id": "d34fc171", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736837.299}
+{"type": "sent", "order_id": "022f5e99", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736837.5}
+{"type": "sent", "order_id": "3042b0eb", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736837.703}
+{"type": "sent", "order_id": "25493385", "event": "cancelled", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736837.904}
+{"type": "sent", "order_id": "ab2a962c", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736838.106}
+{"type": "sent", "order_id": "07f15b19", "event": "created", "attempt": 0, "scenario": "normal", "dmq_eligible": true, "ttl_ms": null, "ts": 1794736838.308}
+{"type": "receipt", "order_id": "d34fc171", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736838.369}
+{"type": "receipt", "order_id": "022f5e99", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736838.37}
+{"type": "receipt", "order_id": "3042b0eb", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736838.371}
+{"type": "receipt", "order_id": "25493385", "event": "cancelled", "attempt": 0, "ok": true, "error": null, "ts": 1794736838.371}
+{"type": "receipt", "order_id": "ab2a962c", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736838.372}
+{"type": "receipt", "order_id": "07f15b19", "event": "created", "attempt": 0, "ok": true, "error": null, "ts": 1794736838.372}
